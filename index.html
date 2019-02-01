@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Sun and Moon</title>
+	<meta content="A simple website to show you the time of day." name="description">
+	<meta content="Gabriella Needham" name="author">
+	<link href="styles/global.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+</head>
+
+<body>
+	
+    <div id="gridwrapper">
+		<div id="photo">
+            <script>
+                var currentDate = new Date;
+                var hour = currentDate.getHours();
+                
+                if ( (hour >= 5) && (hour <17) ) {    
+            document.write("<img src=\"images/sun.jpg\">");
+                } else {
+                    document.write("<img src=\"images/moon.jpg\">");
+                }
+                
+            </script>
+    	</div>
+        </div>
+</body>
+</html>
